@@ -1129,12 +1129,12 @@ class GeneralRateModel(ChromatographicColumnBase):
         default='NONE'
     )
     _surface_diffusion_exponent_factor = SizedUnsignedList(size='n_bound_states')
-    _surface_diffusion_exponent_multiplier = SizedList(size='n_bound_states')
+    _surface_diffusion_exponent_multiplier = SizedFloatList(size='n_bound_states')
     _surface_diffusion_power_factor = SizedUnsignedList(size='n_bound_states')
-    _surface_diffusion_power_exponent = SizedList(size='n_bound_states')
-    _surface_diffusion_logkeq_factor = SizedList(size='n_bound_states')
-    _surface_diffusion_logkeq_exponent = SizedList(size='n_bound_states')
-    _surface_diffusion_logkeq_constant = SizedList(size='n_bound_states')
+    _surface_diffusion_power_exponent = SizedFloatList(size='n_bound_states')
+    _surface_diffusion_logkeq_factor = SizedFloatList(size='n_bound_states')
+    _surface_diffusion_logkeq_exponent = SizedFloatList(size='n_bound_states')
+    _surface_diffusion_logkeq_constant = SizedFloatList(size='n_bound_states')
     _parameters = [
         "bed_porosity",
         "particle_porosity",
